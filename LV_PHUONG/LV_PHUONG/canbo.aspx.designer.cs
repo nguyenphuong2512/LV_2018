@@ -10,34 +10,7 @@
 namespace LV_PHUONG {
     
     
-    public partial class hocvi {
-        
-        /// <summary>
-        /// txtmadv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmadv;
-        
-        /// <summary>
-        /// txttendv control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttendv;
-        
-        /// <summary>
-        /// txttructhuoc control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttructhuoc;
+    public partial class canbo {
         
         /// <summary>
         /// txtmacb control.
@@ -47,6 +20,51 @@ namespace LV_PHUONG {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtmacb;
+        
+        /// <summary>
+        /// txttencb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txttencb;
+        
+        /// <summary>
+        /// txtgt control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtgt;
+        
+        /// <summary>
+        /// txtdiachi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtdiachi;
+        
+        /// <summary>
+        /// txtemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtemail;
+        
+        /// <summary>
+        /// txtcv control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtcv;
         
         /// <summary>
         /// btnthem control.
@@ -85,21 +103,21 @@ namespace LV_PHUONG {
         protected global::System.Web.UI.WebControls.Button btnxoa;
         
         /// <summary>
-        /// sqlDSDONVI control.
+        /// sqlDSCANBO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource sqlDSDONVI;
+        protected global::System.Web.UI.WebControls.SqlDataSource sqlDSCANBO;
         
         /// <summary>
-        /// gvDSDONVI control.
+        /// gvDSCANBO control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView gvDSDONVI;
+        protected global::System.Web.UI.WebControls.GridView gvDSCANBO;
     }
 }
