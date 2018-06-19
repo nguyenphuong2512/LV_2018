@@ -4,3 +4,10 @@ D:\LV_PHUONG\LV_PHUONG\LV_PHUONG\bin\LV_PHUONG.pdb
 D:\LV_PHUONG\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.csprojResolveAssemblyReference.cache
 D:\LV_PHUONG\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.dll
 D:\LV_PHUONG\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.pdb
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\bin\LV_PHUONG.dll.config
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\bin\LV_PHUONG.dll
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\bin\LV_PHUONG.pdb
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.csprojResolveAssemblyReference.cache
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.csproj.CoreCompileInputs.cache
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.dll
+C:\Users\Platini\Source\Repos\LV_2018\LV_PHUONG\LV_PHUONG\obj\Debug\LV_PHUONG.pdb
