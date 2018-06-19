@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace LV_PHUONG
 {
-    public partial class hocvi : System.Web.UI.Page
+    public partial class canbo : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -26,33 +26,37 @@ namespace LV_PHUONG
             btnhuy.Visible = true;
             btnxoa.Visible = false;
             btnthem.Visible = false;
-            txtmadv.ReadOnly = false;
-            txttendv.ReadOnly = false;
-            txttructhuoc.ReadOnly = false;
             txtmacb.ReadOnly = false;
+            txttencb.ReadOnly = false;
+            
+            txtgt.ReadOnly = false;
+            txtdiachi.ReadOnly = false;
+            txtemail.ReadOnly = false;
+            txtcv.ReadOnly = false;
+           
         }
 
-       
+
 
         protected void btncapnhat_Click(object sender, EventArgs e)
         {
             if (btnthem.Visible == false && btnxoa.Visible == false)
             {
-                sqlDSDONVI.Insert();
+                sqlDSCANBO.Insert();
             }
             else
-            {
-                sqlDSDONVI.Update();
+            {        
+                sqlDSCANBO.Update();
             }
             XoaAnButton();
             ResetNoiDung();
         }
 
-       
+
 
         protected void btnxoa_Click(object sender, EventArgs e)
         {
-            sqlDSDONVI.Delete();
+            sqlDSCANBO.Delete();
             ResetNoiDung();
             XoaAnButton();
         }
@@ -62,10 +66,14 @@ namespace LV_PHUONG
             btnhuy.Visible = false;
             btnxoa.Visible = false;
             btnthem.Visible = true;
-            txtmadv.ReadOnly = true;
-            txttendv.ReadOnly = true;
-            txttructhuoc.ReadOnly = true;
             txtmacb.ReadOnly = true;
+            txttencb.ReadOnly = true;
+            
+            txtgt.ReadOnly = true;
+            txtdiachi.ReadOnly = true;
+            txtemail.ReadOnly = true;
+            txtcv.ReadOnly = true;
+            
         }
 
         protected void btnhuy_Click(object sender, EventArgs e)
@@ -80,41 +88,57 @@ namespace LV_PHUONG
             btnhuy.Visible = false;
             btnxoa.Visible = false;
             btnthem.Visible = true;
-            txtmadv.ReadOnly = true;
-            txttendv.ReadOnly = true;
-            txttructhuoc.ReadOnly = true;
             txtmacb.ReadOnly = true;
+            txttencb.ReadOnly = true;
+           
+            txtgt.ReadOnly = true;
+            txtdiachi.ReadOnly = true;
+            txtemail.ReadOnly = true;
+            txtcv.ReadOnly = true;
+           
         }
         private void ResetNoiDung()
         {
-            txtmadv.Text = "";
-            txttendv.Text = "";
-
-            txttructhuoc.Text = "";
             txtmacb.Text = "";
-       
-    }
+            txttencb.Text = "";
+           
+            txtgt.Text = "";
+            txtdiachi.Text = "";
+            txtemail.Text = "";
+            txtcv.Text = "";
+           
 
-        protected void gvDSDONVI_SelectedIndexChanged(object sender, EventArgs e)
+        }
+
+        protected void gvDSCANBO_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GridViewRow row = gvDSDONVI.SelectedRow;
-            txtmadv.Text = row.Cells[1].Text;
-            txttendv.Text = row.Cells[2].Text;
-            txttructhuoc.Text = row.Cells[3].Text;
-            txtmacb.Text = row.Cells[4].Text;
+            GridViewRow row = gvDSCANBO.SelectedRow;
+            txtmacb.Text = row.Cells[1].Text;
+            txttencb.Text = HttpUtility.HtmlDecode(row.Cells[2].Text).ToString();
+            
+            txtgt.Text = HttpUtility.HtmlDecode(row.Cells[4].Text).ToString();
+            txtdiachi.Text = HttpUtility.HtmlDecode(row.Cells[5].Text).ToString();
+            txtemail.Text = row.Cells[6].Text;
+            txtcv.Text = HttpUtility.HtmlDecode(row.Cells[7].Text).ToString();
+            
+        
             ChonAnButton();
         }
 
         private void ChonAnButton()
         {
- 	        btncapnhat.Visible = true;
+            btncapnhat.Visible = true;
             btnhuy.Visible = true;
             btnxoa.Visible = true;
             btnthem.Visible = false;
-            txtmadv.ReadOnly = false;
-            txttendv.ReadOnly = false;
-            txttructhuoc.ReadOnly = false;
             txtmacb.ReadOnly = false;
+            txttencb.ReadOnly = false;
+           
+            txtgt.ReadOnly = false;
+            txtdiachi.ReadOnly = false;
+            txtemail.ReadOnly = false;
+            txtcv.ReadOnly = false;
+            
         }
     }
 }

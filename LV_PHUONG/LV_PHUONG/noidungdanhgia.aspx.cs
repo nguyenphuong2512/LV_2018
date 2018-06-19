@@ -98,7 +98,7 @@ namespace LV_PHUONG
         {
             GridViewRow row = gvDSND.SelectedRow;
             txtmand.Text = row.Cells[1].Text;
-            txttennd.Text = row.Cells[2].Text;
+            txttennd.Text = HttpUtility.HtmlDecode(row.Cells[2].Text).ToString();
             txtmatc.Text = row.Cells[3].Text;
             
             ChonAnButton();
